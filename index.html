@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHAN SAAB Coin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+
+body{
+font-family:'Inter',sans-serif;
+background:linear-gradient(to bottom,#050505,#0d0f0d);
+color:#d0d0d0;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+padding:15px 8%;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(12px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #1a1a1a;
+z-index:999;
+}
+
+header h1{
+font-family:'Orbitron';
+color:#00ff88;
+font-size:22px;
+}
+
+nav a{
+color:#aaa;
+margin-left:20px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+nav a:hover{color:#00ff88;}
+
+section{
+padding:120px 8%;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.hero{text-align:center;}
+
+.hero img{
+width:220px;
+margin:auto;
+filter:drop-shadow(0 0 25px rgba(0,255,136,0.3));
+}
+
+.hero h2{
+font-family:'Orbitron';
+font-size:48px;
+color:#00ff88;
+margin-top:25px;
+}
+
+.hero p{
+max-width:650px;
+margin:15px auto;
+color:#aaa;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+padding:12px 28px;
+margin:15px 8px;
+background:#00ff88;
+color:#000;
+font-weight:600;
+border-radius:30px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#00cc6a;
+transform:translateY(-2px);
+}
+
+.card{
+background:#111;
+border:1px solid #1f1f1f;
+border-radius:15px;
+padding:25px;
+margin:15px 0;
+box-shadow:0 0 15px rgba(0,255,136,0.06);
+}
+
+.card h3{
+color:#00ff88;
+margin-bottom:10px;
+}
+
+.progress{
+height:8px;
+background:#1a1a1a;
+border-radius:10px;
+overflow:hidden;
+margin-top:8px;
+}
+
+.progress div{
+height:100%;
+background:#00ff88;
+}
+
+.captaan{
+text-align:center;
+}
+
+.captaan img{
+width:260px;
+filter:drop-shadow(0 0 20px rgba(0,255,136,0.25));
+}
+
+footer{
+background:#000;
+padding:30px;
+text-align:center;
+color:#666;
+border-top:1px solid #1a1a1a;
+}
+
+@media(max-width:768px){
+nav{display:none;}
+.hero h2{font-size:34px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>KHAN SAAB</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#tokenomics">Tokenomics</a>
+<a href="#roadmap">Roadmap</a>
+<a href="#whitepaper">Whitepaper</a>
+<a href="#buy">Buy</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<img src="coin.png" alt="coin">
+<h2>KHAN SAAB Coin</h2>
+<p>A public-first cryptocurrency focused on transparency, fairness and long-term growth for the community.</p>
+
+<a href="#buy" class="btn">Buy Now</a>
+<a href="#contact" class="btn">Join Community</a>
+</section>
+
+<section class="captaan">
+<img src="captaan.png" alt="captaan">
+<p style="margin-top:15px;">Captaan — the symbol of transparency and leadership.</p>
+</section>
+
+<section id="tokenomics">
+<h2 style="color:#00ff88;font-family:Orbitron;">Tokenomics</h2>
+
+<div class="card">
+<h3>Total Supply — 750,000,000</h3>
+</div>
+
+<div class="card">
+<h3>Public Distribution — 550,000,000 (73.3%)</h3>
+<div class="progress"><div style="width:73.3%"></div></div>
+</div>
+
+<div class="card">
+<h3>Liquidity — 100,000,000 (13.3%)</h3>
+<div class="progress"><div style="width:13.3%"></div></div>
+</div>
+
+<div class="card">
+<h3>Marketing / Giveaway — 50,000,000 (6.7%)</h3>
+<div class="progress"><div style="width:6.7%"></div></div>
+</div>
+
+<div class="card">
+<h3>Reserve / Staking — 50,000,000 (6.7%)</h3>
+<div class="progress"><div style="width:6.7%"></div></div>
+</div>
+
+</section>
+
+<section id="roadmap">
+<h2 style="color:#00ff88;font-family:Orbitron;">Roadmap</h2>
+
+<div class="card"><h3>Phase 1</h3><p>Website + Community Launch</p></div>
+<div class="card"><h3>Phase 2</h3><p>Token Launch & Growth Campaign</p></div>
+<div class="card"><h3>Phase 3</h3><p>Exchange Listing & Utility Expansion</p></div>
+<div class="card"><h3>Phase 4</h3><p>Bridge & Ecosystem Growth</p></div>
+
+</section>
+
+<section id="whitepaper">
+<h2 style="color:#00ff88;font-family:Orbitron;">Whitepaper</h2>
+<div class="card">
+<p>Read the complete vision and token details.</p>
+<a href="KHAN_SAAB_Coin_Whitepaper.pdf" class="btn">Download Whitepaper</a>
+</div>
+</section>
+
+<section id="buy">
+<h2 style="color:#00ff88;font-family:Orbitron;">Buy</h2>
+<div class="card">
+<p>Token sale phases will be announced soon.</p>
+<a class="btn">Coming Soon</a>
+</div>
+</section>
+
+<section id="contact">
+<h2 style="color:#00ff88;font-family:Orbitron;">Contact</h2>
+<div class="card">
+<p>Telegram: @khansaabcoin</p>
+<p>Email: info@khansaabcoin.com</p>
+</div>
+</section>
+
+<footer>
+© 2026 KHAN SAAB Coin — All Rights Reserved
+</footer>
+
+</body>
+</html>
