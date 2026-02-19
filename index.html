@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IK Vision</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#071a14;
+color:white;
+}
+
+/* HEADER */
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#071a14;
+border-bottom:1px solid #00ff9d;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 15px;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+color:#00ff9d;
+font-weight:bold;
+}
+
+.logo img{
+width:35px;
+}
+
+.menu{
+font-size:22px;
+cursor:pointer;
+color:#00ff9d;
+}
+
+/* SIDE MENU */
+.sidebar{
+position:fixed;
+top:0;
+left:-250px;
+width:250px;
+height:100%;
+background:#071a14;
+padding-top:70px;
+transition:0.3s;
+z-index:999;
+}
+
+.sidebar a{
+display:block;
+padding:15px;
+color:white;
+text-decoration:none;
+border-bottom:1px solid #00ff9d;
+}
+
+.sidebar.active{
+left:0;
+}
+
+/* HERO */
+.hero{
+padding-top:100px;
+text-align:center;
+}
+
+.coin{
+width:220px;
+margin:20px auto;
+display:block;
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+}
+
+h1{
+color:#00ff9d;
+}
+
+p{
+color:#ccc;
+padding:0 20px;
+}
+
+.btn{
+background:#00ff9d;
+color:black;
+padding:10px 20px;
+border-radius:5px;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="coin.png">
+IK Vision
+</div>
+<div class="menu" onclick="toggleMenu()">☰</div>
+</header>
+
+<div class="sidebar" id="menu">
+<a href="#">Home</a>
+<a href="#">Tokenomics</a>
+<a href="#">Roadmap</a>
+<a href="#">Whitepaper</a>
+<a href="#">Buy</a>
+<a href="#">Contact</a>
+</div>
+
+<section class="hero">
+<img src="coin.png" class="coin">
+
+<h1>IK Vision Coin</h1>
+<p>Public First Crypto Project — Transparency, Trust & Growth</p>
+
+<a href="#" class="btn">Buy Now</a>
+</section>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
