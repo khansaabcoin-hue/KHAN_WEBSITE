@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHAN SAAB Coin</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #021d16;
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #00ffae;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 35px;
+}
+
+.menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* SIDEBAR MENU */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: #02281f;
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.close-btn {
+  font-size: 22px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.sidebar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #011a14;
+  border: none;
+  color: white;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 0;
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.hero img {
+  width: 200px;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 80%;
+  max-width: 250px;
+  background: #00ffae;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* CARDS */
+.card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #00ffae;
+  border-radius: 10px;
+}
+
+/* TOKEN BARS */
+.bar {
+  margin: 10px 0;
+}
+
+.bar span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress {
+  height: 6px;
+  background: #03352a;
+  border-radius: 5px;
+}
+
+.progress div {
+  height: 6px;
+  background: #00ffae;
+  border-radius: 5px;
+}
+
+/* PIE */
+.pie {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: conic-gradient(
+    #00ffae 0% 73%,
+    #009e6d 73% 86%,
+    #006b4a 86% 93%,
+    #004d36 93% 100%
+  );
+}
+
+/* LEGEND */
+.legend {
+  text-align: center;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png">
+    <b>KHAN SAAB</b>
+  </div>
+  <div class="menu-btn" onclick="openMenu()">☰</div>
+</header>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="menu">
+  <div class="close-btn" onclick="closeMenu()">❌</div>
+  <input type="text" placeholder="Search...">
+  <a href="#">Home</a>
+  <a href="#">Tokenomics</a>
+  <a href="#">Roadmap</a>
+  <a href="#">Whitepaper</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="logo.png">
+  <h1>KHAN SAAB Coin</h1>
+  <p>Public-first crypto project focused on transparency, trust, and long-term growth.</p>
+
+  <button class="btn">Launch Coming Soon</button>
+  <button class="btn">Read Whitepaper</button>
+</div>
+
+<!-- TRUST -->
+<div class="card">
+  <h3>🔐 Trust & Transparency</h3>
+  <p>50M tokens allocated for staking and reserve are managed transparently.</p>
+</div>
+
+<!-- TOKENOMICS -->
+<div class="card">
+  <h3>📊 Token Allocation</h3>
+
+  <div class="bar">
+    <span>Public (550M) <b>73%</b></span>
+    <div class="progress"><div style="width:73%"></div></div>
+  </div>
+
+  <div class="bar">
+    <span>Liquidity (100M) <b>13%</b></span>
+    <div class="progress"><div style="width:13%"></div></div>
+  </div>
+
+  <div class="bar">
+    <span>Marketing (50M) <b>7%</b></span>
+    <div class="progress"><div style="width:7%"></div></div>
+  </div>
+
+  <div class="bar">
+    <span>Staking (50M) <b>7%</b></span>
+    <div class="progress"><div style="width:7%"></div></div>
+  </div>
+
+  <div class="pie"></div>
+
+  <div class="legend">
+    🟢 Public 73% <br>
+    🟢 Liquidity 13% <br>
+    🟢 Marketing 7% <br>
+    🟢 Staking 7%
+  </div>
+
+  <p style="text-align:center;">Total Supply: 750 Million KHAN</p>
+</div>
+
+<footer>
+© 2026 KHAN SAAB Coin
+</footer>
+
+<script>
+function openMenu() {
+  document.getElementById("menu").classList.add("active");
+}
+
+function closeMenu() {
+  document.getElementById("menu").classList.remove("active");
+}
+</script>
+
+</body>
+</html>
