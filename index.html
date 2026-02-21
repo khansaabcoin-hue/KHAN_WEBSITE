@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khan Saab Coin</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #020617;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: #020617;
+  transition: 0.3s;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  font-size: 22px;
+  text-align: right;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* SEARCH BAR */
+.search-box {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #00ffa3;
+  background: transparent;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* MENU ITEMS */
+.menu a {
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid #1e293b;
+  color: white;
+  text-decoration: none;
+}
+
+/* CONTENT */
+.container {
+  padding: 20px;
+}
+
+/* TOKEN BOX */
+.token-box {
+  border: 2px solid #00ffa3;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.token-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.green { color: #00ffa3; }
+.yellow { color: #ffd700; }
+.blue { color: #00c3ff; }
+.pink { color: #ff4dd2; }
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="menu-btn" onclick="openMenu()">☰</div>
+  <h3>Khan Saab Coin</h3>
+</div>
+
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+
+  <div class="close-btn" onclick="closeMenu()">✕</div>
+
+  <input class="search-box" placeholder="Search Keywords">
+
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Token Offer</a>
+    <a href="#">Roadmap</a>
+    <a href="#">Tokenomics</a>
+    <a href="#">FAQs</a>
+    <a href="#">Connect Wallet</a>
+  </div>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <h2>Token Allocation</h2>
+
+  <div class="token-box">
+    <h3>Total Supply: 750 Million KHAN</h3>
+
+    <div class="token-row">
+      <span>Public (550M)</span>
+      <span class="green">73%</span>
+    </div>
+
+    <div class="token-row">
+      <span>Liquidity (100M)</span>
+      <span class="yellow">13%</span>
+    </div>
+
+    <div class="token-row">
+      <span>Marketing (50M)</span>
+      <span class="blue">7%</span>
+    </div>
+
+    <div class="token-row">
+      <span>Staking (50M)</span>
+      <span class="pink">7%</span>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function openMenu() {
+  document.getElementById("sidebar").classList.add("active");
+}
+
+function closeMenu() {
+  document.getElementById("sidebar").classList.remove("active");
+}
+</script>
+
+</body>
+</html>
