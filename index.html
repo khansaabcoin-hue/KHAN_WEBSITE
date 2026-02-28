@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IK Vision Tokenomics</title>
+
+<style>
+body {
+  background: #0a0f1c;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+/* Section */
+.tokenomics {
+  margin-top: 80px;
+}
+
+h2 {
+  color: #00ffcc;
+  margin-bottom: 50px;
+}
+
+/* Circle Container */
+.circle-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: auto;
+}
+
+/* Circle */
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(
+    #00ffcc 0% 30%,      /* Public */
+    #00cc99 30% 45%,     /* Liquidity */
+    #009977 45% 55%,     /* Marketing */
+    #00e6b8 55% 70%,     /* Staking */
+    #00b386 70% 85%,     /* Reserve */
+    #007a66 85% 100%     /* Team */
+  );
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Labels */
+.label {
+  position: absolute;
+  font-size: 14px;
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+/* Positions */
+
+/* Public (Right) */
+.label1 {
+  top: 45%;
+  right: -100px;
+}
+
+/* Liquidity (Bottom Right) */
+.label2 {
+  bottom: -25px;
+  right: 10px;
+}
+
+/* Marketing (LEFT SIDE — adjusted) */
+.label3 {
+  top: -5px;
+  left: 5px;
+}
+
+/* Staking (UP + LEFT — adjusted) */
+.label4 {
+  top: -25px;
+  left: 42%;
+  transform: translateX(-50%);
+}
+
+/* Reserve (Bottom Left) */
+.label5 {
+  bottom: -25px;
+  left: 10px;
+}
+
+/* Team (Top Right) */
+.label6 {
+  top: 10px;
+  right: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="tokenomics">
+  <h2>Token Allocation</h2>
+
+  <div class="circle-container">
+    
+    <div class="circle"></div>
+
+    <!-- Labels -->
+    <div class="label label1">Public (30%)</div>
+    <div class="label label2">Liquidity (15%)</div>
+    <div class="label label3">Marketing (10%)</div>
+    <div class="label label4">Staking (15%)</div>
+    <div class="label label5">Reserve (15%)</div>
+    <div class="label label6">Team (15%)</div>
+
+  </div>
+</section>
+
+</body>
+</html>
