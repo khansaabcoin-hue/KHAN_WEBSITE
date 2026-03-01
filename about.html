@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - KHAN SAAB Coin</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.menu-btn {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  background: #020617;
+  transition: 0.4s;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.close-btn {
+  font-size: 24px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.logo-box img {
+  width: 40px;
+}
+
+.search {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.menu a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Content */
+.section {
+  padding: 30px 20px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.box {
+  border: 1px solid #22c55e;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="menu-btn" onclick="openMenu()">☰</div>
+</header>
+
+<div class="sidebar" id="menu">
+  <div class="close-btn" onclick="closeMenu()">✕</div>
+
+  <div class="logo-box">
+    <img src="coin.png">
+    <h3>KHAN SAAB Coin</h3>
+  </div>
+
+  <input class="search" placeholder="Search...">
+
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="buy.html">Wallet Connect</a>
+  </div>
+</div>
+
+<section class="section">
+  <h1>About KHAN SAAB Coin</h1>
+
+  <div class="box">
+    <p><b>KHAN SAAB Coin</b> is a public-first cryptocurrency inspired by the vision of Imran Khan.</p>
+
+    <p>Our mission is simple:</p>
+    <p>👉 Give power back to the public</p>
+    <p>👉 Provide low entry opportunity</p>
+    <p>👉 Build trust through transparency</p>
+
+    <p>
+    Unlike traditional projects, KHAN SAAB Coin focuses on accessibility,
+    fairness, and long-term growth for the community.
+    </p>
+
+    <p>
+    This is not just a coin — it’s a movement.
+    </p>
+  </div>
+
+</section>
+
+<script>
+function openMenu() {
+  document.getElementById("menu").classList.add("active");
+}
+function closeMenu() {
+  document.getElementById("menu").classList.remove("active");
+}
+</script>
+
+</body>
+</html>
